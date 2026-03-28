@@ -4,7 +4,7 @@ __author__: str = "730736150"
 
 
 def invert(input_dict: dict[str, str]) -> dict[str, str]:
-    """Inverts the keys and values of a dictionary."""
+    """Invert the keys and values of a dictionary."""
     result: dict[str, str] = {}
     for (
         key
@@ -37,11 +37,11 @@ def favorite_color(colors: dict[str, str]) -> str:
         if color_counts[color] > max_count:
             max_count = color_counts[color]
             most_popular = color
-    return print(most_popular)
+    return most_popular
 
 
 def count(values: list[str]) -> dict[str, int]:
-    """Counts the number of occurrences of each string in a list."""
+    """Count the number of occurrences of each string in a list."""
     result: dict[str, int] = {}
     for (
         item
@@ -56,7 +56,7 @@ def count(values: list[str]) -> dict[str, int]:
 
 
 def alphabetizer(words: list[str]) -> dict[str, list[str]]:
-    """Groups words by their starting letter."""
+    """Group words by their starting letter."""
     result: dict[str, list[str]] = {}
     for (
         word
@@ -73,6 +73,7 @@ def alphabetizer(words: list[str]) -> dict[str, list[str]]:
 
 
 def update_attendance(attendance: dict[str, list[str]], day: str, student: str) -> None:
+    """Update the attendance dictionary with a student for a given day."""
     if (
         day not in attendance
     ):  # If the day already exists, append the student to the list, otherwise create a new list with the student
